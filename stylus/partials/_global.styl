@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Variables
-
+$color2 = #4f8599
 
 
 // Classes
@@ -34,8 +34,9 @@
 
 // Manual Flexbox
 
-.flexbox
+flexbox()
 	text-align justify
+	padding 0
 
 	&:after
 		width 100%
@@ -43,22 +44,39 @@
 		content ''
 
 
-.flexitem
+flexitem()
 	display inline-block
 
 
 // Functions
 
-wrapper( $topMargin = false, $bottomMargin = false )
-	width 90%
-	position relative
+ff_body()
+	font-family 'Muli', sans-serif
+
+ff_special()
+	font-family 'Cinzel', serif
+	font-weight normal
+
+
+wrapper( $topMargin = false, $bottomMargin = false, $customWidth = false )
+	if $customWidth == false
+		$w = 85%
+	else
+		$w = $customWidth
 
 	if $topMargin == false
 		$topMargin = 0
 	if $bottomMargin == false
 		$bottomMargin = 0
 
+	width $w
+	max-width 64em
+	position relative
 	margin $topMargin auto $bottomMargin auto
+
+
+unwrapper()
+	width 100%
 
 
 body-shadow( $yPos )
