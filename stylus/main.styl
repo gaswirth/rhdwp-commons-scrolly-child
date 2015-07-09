@@ -6,7 +6,10 @@
 
 html
 body
+	width 100%
 	ff_body()
+	background-color white
+	overflow-x hidden
 
 
 h1
@@ -17,4 +20,147 @@ h5
 h6
 .entry-title
 .page-title
+#site-navigation
 	ff_special()
+
+
+a
+	color $color2
+
+
+#colophon
+	padding 1.5em 0
+	background-color $color2
+	color white
+
+
+#top
+	#masthead
+		background-image url(../img/jenblood-top.jpg)
+		background-position center center
+		color black
+
+		.header-content
+			padding 0
+
+			#site-navigation
+				font-size 1em
+
+				li
+					letter-spacing -0.5px
+
+					a
+						&:hover
+						&:active
+							color white
+
+
+#resume
+	ff_special()
+
+	.resume-container
+		width 31em
+		max-width 98%
+		@extends .clearfix
+		margin 0 auto 2em auto
+
+		img
+			width 49%
+			height auto
+			margin 0
+
+			&:first-child
+				padding-right 1em
+
+			&:last-child
+				padding-left 1em
+
+
+#photos
+	.galleria
+		margin 1em auto
+
+
+#contact
+	#contact-form
+		textarea
+		input
+			width 100%
+
+		input
+			&[type="submit"]
+				background-color $color2
+				margin 0
+				color white
+
+				&:hover
+				&:active
+					background-color $color2-light
+
+		.contact-form
+			label
+				span
+					@extends .invisible
+
+
+#social
+	width 11em
+	margin 1em auto 0
+	flexbox()
+
+	.social-item
+		width 76px
+		height auto
+		flexitem()
+
+		img
+			max-width 100%
+			height auto
+
+
+#full-bg-1
+	background-image url(../img/jenblood-news.jpg)
+	background-position center left
+
+
+#full-bg-2
+	background-image url(../img/jenblood-photos.jpg)
+	background-position center left
+
+
+#full-bg-3
+	background-image url(../img/jenblood-media.jpg)
+
+
+#full-bg-4
+	background-image url(../img/jenblood-contact.jpg)
+	background-position -57px top
+
+
+
+@media screen and (min-width 40em)
+	#news
+		.pagination
+			.nav-links
+				.page-numbers
+					.pagination-button
+						background-color $color2
+
+	#contact
+		#contact-form
+			input
+				&[type="text"]
+				&[type="email"]
+					width 75%
+
+				&[type="submit"]
+					width 16em
+
+		#social
+			margin 2em auto 0
+
+
+@media screen and (orientation landscape)
+	#content
+		.full-bg
+			background-position center center

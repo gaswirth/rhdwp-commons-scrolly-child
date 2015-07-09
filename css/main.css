@@ -1,30 +1,5 @@
 /***
-* RHD Dev: Compiled at 4:34:34 PM on 30-04-2015
+* RHD Production: Compiled at 5:43:04 PM on 03-07-2015
 ***/
 
-.unselectable {
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-  -o-user-select: none;
-  user-select: none;
-}
-.invisible {
-  position: absolute;
-  visibility: hidden;
-  margin: 0;
-}
-.flexbox {
-  text-align: justify;
-}
-.flexbox:after {
-  width: 100%;
-  display: inline-block;
-  content: '';
-}
-.flexitem {
-  display: inline-block;
-}
-/* ==========================================================================
-	Child Main Stylesheet
-   ========================================================================== */
+.unselectable{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.invisible,#contact #contact-form .contact-form label span{position:absolute;visibility:hidden;margin:0}.clearfix:before,#resume .resume-container:before,.clearfix:after,#resume .resume-container:after{content:" ";display:table}.clearfix:after,#resume .resume-container:after{clear:both}html,body{width:100%;font-family:'Muli',sans-serif;background-color:#fff;overflow-x:hidden}h1,h2,h3,h4,h5,h6,.entry-title,.page-title,#site-navigation{font-family:'Cinzel',serif;font-weight:normal}a{color:#4f8599}#colophon{padding:1.5em 0;background-color:#4f8599;color:#fff}#top #masthead{background-image:url("../img/jenblood-top.jpg");background-position:center center;color:#000;}#top #masthead .header-content{padding:0;}#top #masthead .header-content #site-navigation{font-size:1em;}#top #masthead .header-content #site-navigation li{letter-spacing:-.5px;}#top #masthead .header-content #site-navigation li a:hover,#top #masthead .header-content #site-navigation li a:active{color:#fff}#resume{font-family:'Cinzel',serif;font-weight:normal;}#resume .resume-container{width:31em;max-width:98%;margin:0 auto 2em auto;}#resume .resume-container img{width:49%;height:auto;margin:0;}#resume .resume-container img:first-child{padding-right:1em}#resume .resume-container img:last-child{padding-left:1em}#photos .galleria{margin:1em auto}#contact #contact-form textarea,#contact #contact-form input{width:100%}#contact #contact-form input[type="submit"]{background-color:#4f8599;margin:0;color:#fff;}#contact #contact-form input[type="submit"]:hover,#contact #contact-form input[type="submit"]:active{background-color:#5a99b0}#social{width:11em;margin:1em auto 0;text-align:justify;padding:0;}#social:after{width:100%;display:inline-block;content:''}#social .social-item{width:76px;height:auto;display:inline-block;}#social .social-item img{max-width:100%;height:auto}#full-bg-1{background-image:url("../img/jenblood-news.jpg");background-position:center left}#full-bg-2{background-image:url("../img/jenblood-photos.jpg");background-position:center left}#full-bg-3{background-image:url("../img/jenblood-media.jpg")}#full-bg-4{background-image:url("../img/jenblood-contact.jpg");background-position:-57px top}@media screen and (min-width:40em){#news .pagination .nav-links .page-numbers .pagination-button{background-color:#4f8599}#contact #contact-form input[type="text"],#contact #contact-form input[type="email"]{width:75%}#contact #contact-form input[type="submit"]{width:16em}#contact #social{margin:2em auto 0}}@media screen and (orientation:landscape){#content .full-bg{background-position:center center}}

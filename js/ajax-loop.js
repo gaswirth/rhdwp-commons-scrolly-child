@@ -3,6 +3,7 @@ var templateUrl = wp_child_data.template_url,
 	parentUrl = wp_child_data.parent_url,
 	ajaxUrl = wp_data.ajax_url,
 	queryVars = wp_data.query_vars;
+
 (function($){
 	function find_page_number() {
 		var pg,

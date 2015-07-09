@@ -37,7 +37,7 @@ $section_args = array(
 			</section>
 
 			<section id="news">
-				<div class="section-content">
+				<div class="section-content news-content">
 					<h2 class="section-title">Recently</h2>
 
 					<?php if ( have_posts() ) : ?>
@@ -54,8 +54,8 @@ $section_args = array(
 				<?php
 					the_posts_pagination( array(
 						'mid_size' => 1,
-						'prev_text' => '<div class="pagination-button ltri">&ltri;</div>',
-						'next_text' => '<div class="pagination-button rtri">&rtri;</div>'
+						'prev_text' => '<div class="pagination-button left">Newer</div>',
+						'next_text' => '<div class="pagination-button right">Older</div>'
 					) );
 				?>
 			</section>
