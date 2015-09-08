@@ -20,14 +20,15 @@ add_action( 'wp_enqueue_scripts', 'rhd_theme_enqueue_styles' );
 function rhd_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', RHD_THEME_DIR . '/style.css' );
     wp_enqueue_style( 'child-main', RHD_CHILD_DIR . '/css/main.css', array( 'rhd-main' ) );
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Cinzel|Muli:400,400italic', array( 'parent-style', 'child-main' ), null, 'all' );
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Oswald:300,700', array( 'parent-style', 'child-main' ), null, 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'rhd_theme_enqueue_scripts' );
 function rhd_theme_enqueue_scripts() {
-	wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main' ), null, true );
+	// wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main' ), null, true );
 
     // Localize data for client-side use
+/*
 	global $wp_query;
 	$data = array(
 		'home_url' => home_url(),
@@ -38,6 +39,7 @@ function rhd_theme_enqueue_scripts() {
 		'query_vars' => json_encode( $wp_query->query )
 	);
 	wp_localize_script( 'child-main', 'wp_data', $data);
+*/
 }
 
 

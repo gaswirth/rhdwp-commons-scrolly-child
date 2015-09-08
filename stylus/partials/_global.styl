@@ -3,7 +3,10 @@
    ========================================================================== */
 
 // Variables
-$color2 = #4f8599
+$red = #a01c28
+$red2 = #580f16
+
+$ff-body = 'Oswald', sans-serif
 
 
 // Classes
@@ -31,10 +34,14 @@ $color2 = #4f8599
 	&:after
 		clear both
 
+.bg-red
+	background-color $red
+	color white
+
 
 // Manual Flexbox
 
-flexbox()
+-flexbox()
 	text-align justify
 	padding 0
 
@@ -44,21 +51,13 @@ flexbox()
 		content ''
 
 
-flexitem()
+-flexitem()
 	display inline-block
 
 
 // Functions
 
-ff_body()
-	font-family 'Muli', sans-serif
-
-ff_special()
-	font-family 'Cinzel', serif
-	font-weight normal
-
-
-wrapper( $topMargin = false, $bottomMargin = false, $customWidth = false )
+-wrapper( $topMargin = false, $bottomMargin = false, $customWidth = false )
 	if $customWidth == false
 		$w = 85%
 	else
@@ -75,15 +74,15 @@ wrapper( $topMargin = false, $bottomMargin = false, $customWidth = false )
 	margin $topMargin auto $bottomMargin auto
 
 
-unwrapper()
+-unwrapper()
 	width 100%
 
 
-body-shadow( $yPos )
+-body-shadow( $yPos )
 	box-shadow 0em $yPos 0.45em 0em rgba(0,0,0,0.5)
 
 
-placeholder-props( $famVal, $color)
+-placeholder-props( $famVal, $color)
 	&::-webkit-input-placeholder
 		font-family $famVal
 		color $color
@@ -98,18 +97,12 @@ placeholder-props( $famVal, $color)
 		color $color
 
 
-opacity( $val )
+-opacity( $val )
 	-moz-opacity $val
 	-webkit-opacity $val
 	opacity $val
 
 
-transform( $val )
+-transform( $val )
 	-webkit-transform $val
 	transform $val
-
-
-border-radius( $rad )
-	-webkit-border-radius $rad
-	-moz-border-radius $rad
-	border-radius $rad
